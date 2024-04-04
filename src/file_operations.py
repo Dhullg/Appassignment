@@ -17,7 +17,8 @@ def read_employees():
             "secondname":fields[2],
             "birth":fields[3],
             "startingdate":fields[4],
-            "salary": float(fields[5]),
+            "position":fields[5],
+            "salary": float(fields[6]),
         }
         employee_list.append(employee_data)
         employees_file.close()
@@ -36,7 +37,7 @@ def write_employees():
     employees_file = open("employees.txt", "w")
 
     for employee in employees_data:
-        line = f"{employee['id']},{employee['name']},{employee['salary']}\n"
+        line = f"{employee['id']},{employee['firstname']},{employee['secondname']},{employee['birth']},{employee['startingdate']},{employee['positon']},{employee['salary']}\n"
         employees_file.write(line)
 
     employees_file.close()
