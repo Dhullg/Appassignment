@@ -13,8 +13,9 @@ def add_employee():
         last=input("Enter last name of employeee:")
         birth=input("Enter birth date:")
         start=int(input("Enter starting year:"))
+        positon=input("Enter position")
         salary=int(input("Enter salary:"))
-        list=[id,first,last,birth,start,salary]
+        list=[id,first,last,birth,start,position,salary]
         employee.append(list)
     """
     Add Employee Function
@@ -46,6 +47,7 @@ def update_employee():
             last=input("Enter last name of employeee:")
             birth=input("Enter birth date:")
             start=int(input("Enter starting year:"))
+            position=input("Enter position")
             salary=int(input("Enter salary:"))
             i=[id,first,last,birth,start,salary]
             
