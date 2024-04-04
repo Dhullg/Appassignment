@@ -5,6 +5,17 @@ This module provides functions for adding, deleting, and updating employee infor
 """
 
 def add_employee():
+    employee=[]
+    how=int(input("Enter how many employee to add:"))
+    for i in range(how):
+        id=int(input("Enter id of employee:"))
+        first=input("Enter first name of employee:")
+        last=input("Enter last name of employeee:")
+        birth=input("Enter birth date:")
+        start=int(input("Enter starting year:"))
+        salary=int(input("Enter salary:"))
+        list=[id,first,last,birth,start,salary]
+        employee.append(list)
     """
     Add Employee Function
 
@@ -14,6 +25,10 @@ def add_employee():
     """
 
 def delete_employee():
+    who=int(input("Enter Employee id to delete:"))
+    for i in employee:
+        if who== i[0]:
+        employee.remove(i)
     """
     Delete Employee Function
 
@@ -23,6 +38,17 @@ def delete_employee():
     """
 
 def update_employee():
+    who=int(input("Enter Employee id to update:"))
+    for i in employee:
+        if who== i[0]:
+            id=int(input("Enter id of employee:"))
+            first=input("Enter first name of employee:")
+            last=input("Enter last name of employeee:")
+            birth=input("Enter birth date:")
+            start=int(input("Enter starting year:"))
+            salary=int(input("Enter salary:"))
+            i=[id,first,last,birth,start,salary]
+            
     """
     Update Employee Function
 
